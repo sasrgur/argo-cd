@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: 'Postgres-testing'
+spec:
+  destination:
+    namespace: 'postgres'
+    server: 'https://github.com/sasrgur/postgres.git'
+  source:
+    path: 'manifests'
+    repoURL: 'https://github.com/sasrgur/postgres.git'
+    targetRevision: master
+  sources: []
+  project: ''
+  createNamespace: 'yes'
