@@ -11,6 +11,5 @@ spec:
     path: 'manifests'
     repoURL: 'https://github.com/sasrgur/postgres.git'
     targetRevision: master
-  sources: []
-  project: ''
+  project: 'default'
   createNamespace: 'yes'
