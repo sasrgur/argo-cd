@@ -4,7 +4,6 @@ metadata:
   name: 'postgres'
 spec:
   destination:
-    namespace: 'postgres'
     server: 'https://kubernetes.default.svc'
   project: default
   source:
