@@ -1,11 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: 'Postgres'
+  name: 'postgres'
 spec:
   destination:
     namespace: 'postgres'
     server: 'https://kubernetes.default.svc'
+  project: default
   source:
     path: 'manifests'
     repoURL: 'https://github.com/sasrgur/postgres.git'
